@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Management System</title>
+</head>
+
+<body>
+
+    <h1>Order Management System</h1>
+
+    <p>Docker Multi-Container Application</p>
+
+    <h2>Place Order</h2>
+
+    <input type="text" id="product" placeholder="Product">
+
+    <input type="number" id="amount" placeholder="Amount">
+
+    <button onclick="placeOrder()">
+        Place Order
+    </button>
+
+    <p id="result"></p>
+
+    <script>
+        function placeOrder() {
+
+            const product =
+                document.getElementById("product").value;
+
+            const amount =
+                document.getElementById("amount").value;
+
+            document.getElementById("result").innerText =
+                "Order submitted: " +
+                product + " - ₱" + amount;
+        }
+    </script>
+
+</body>
+</html>
